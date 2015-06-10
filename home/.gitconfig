@@ -48,5 +48,11 @@
     log  = diff-highlight | less
     show = diff-highlight | less
     diff = diff-highlight | less
+[pull]
+    rebase = true
+[push]
+    default = current
+[branch]
+    autosetuprebase = always
 [include]
     path = .gitconfig.local
