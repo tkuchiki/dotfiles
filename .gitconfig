@@ -1,0 +1,52 @@
+[user]
+    name  = tkuchiki
+[core]
+    editor            = TERM=xterm-256color emacsclient -nw -a ''
+	excludesfile      = ~/.gitignore
+    pager             = less -r
+    quotepath         = false
+ 	precomposeunicode = true
+    whitespace        = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[gui]
+	encoding = utf-8
+[alias]
+    br = branch
+    ci = commit
+    co = checkout
+    ls = log
+    sh = show
+    st = status
+[color]
+    ui          = auto
+    branch      = auto
+    diff        = auto
+    status      = auto
+    interactive = auto
+[color "branch"]
+    current = yellow black
+    local   = yellow
+    remote  = magenta
+[color "diff"]
+    meta = yellow bold
+    frag = green bold
+    old  = red reverse
+    new  = green reverse
+[color "status"]
+    added    = green
+    changed  = red
+    untraced = cyan reverse
+    branch   = magenta
+[tig "bind"]
+    generic = g move-first-line
+    generic = G move-last-line
+[credential]
+    helper = osxkeychain
+[merge]
+    ff     = false
+    commit = false
+[pager]
+    log  = diff-highlight | less
+    show = diff-highlight | less
+    diff = diff-highlight | less
+[include]
+    path = .gitconfig.local

@@ -1,0 +1,10 @@
+*~
+.#*
+.*.swp
+.DS_Store
+.svn
+.buildpath
+.project
+.settings
+.rbenv-version
+.gitconfig.local
